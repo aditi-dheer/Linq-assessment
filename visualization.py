@@ -42,4 +42,4 @@ for seconds in range(2000):
         st.write("No data available yet.")
 
     # refresh every 5 seconds for real-time functionality
-    time.sleep(5)
+    time.sleep(10)

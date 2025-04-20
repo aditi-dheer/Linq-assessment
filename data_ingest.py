@@ -1,14 +1,13 @@
 from datastore_setup import get_collection
 import random
 from datetime import datetime
-import time
 import pytz
 
 collection = get_collection()
 
 def ingest_data():
     """Inserts mock temperature data into the database"""
-    
+
     # get the latest id value to continue from the last one or start from 0
     if collection.count_documents({}) > 0:
         latest_entry = collection.find().sort('_id', -1).limit(1)

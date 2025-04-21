@@ -18,7 +18,7 @@ st.set_page_config(
 st.title("Real-Time NYC Temperature Updates")
 placeholder = st.empty()
 
-# loop to update the data every 5 seconds
+# loop to update the data every 10 seconds
 for seconds in range(2000):
 
     # calls the function to ingest new data
@@ -41,5 +41,5 @@ for seconds in range(2000):
     else:
         st.write("No data available yet.")
 
-    # refresh every 5 seconds for real-time functionality
+    # refresh every 10 seconds for real-time functionality
     time.sleep(10)
